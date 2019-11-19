@@ -60,7 +60,7 @@ const searchObjectByName = (jsonObj, input) => {
   console.log(jsonObj.firstname.filter(firstName => firstName === input));
 };
 
-// How to search an array and return a value based on whether it was true or false
+// How to search a nested array and return a value based on whether it was true or false
 const searchObjectBySearchableKeyword = (jsonObj, input) => {
   jsonObj.corrupted.map(element => {
     if (element.searchableKeywords.includes(input)) {
